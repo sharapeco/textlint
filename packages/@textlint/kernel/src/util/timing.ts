@@ -32,7 +32,7 @@ function alignRight(str: string, len: number, ch?: string) {
     return new Array(len - str.length + 1).join(ch || " ") + str;
 }
 
-const enabled = Boolean(process.env.TIMING);
+const enabled = Boolean(process?.env?.TIMING);
 
 const HEADERS = ["Rule", "Time (ms)", "Relative"];
 const ALIGN = [alignLeft, alignRight, alignRight];
